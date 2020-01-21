@@ -2,8 +2,9 @@ import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
 
-const Navigation = (git ) => {
+const Navigation = () => {
 	const cart = useContext(CartContext);
+	console.log("Nav Cart", cart);
 	return (
 		<div className="navigation">
 			<NavLink to="/">Products</NavLink>
